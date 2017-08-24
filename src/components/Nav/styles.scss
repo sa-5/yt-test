@@ -1,0 +1,17 @@
+@import '~stylesheets/common/variables';
+
+.pagenav {
+    ul {
+        li {
+            display: inline-block;
+            padding: 0 20px;
+            a {
+                display: block;
+                padding: 10px 0;
+                &.active {
+                    border-bottom: 2px solid #719dff;
+                }
+            }//a
+        }//li
+    }//ul
+}//pagenav

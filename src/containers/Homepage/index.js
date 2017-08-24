@@ -10,6 +10,9 @@ import {
 } from 'config/messages';
 
 import ExampleComponent from 'components/Example';
+import HeaderComponent from 'components/Header';
+import SidebarComponent from 'components/Sidebar';
+import CarouselComponent from 'components/Carousel';
 
 export default Vue.extend({
 
@@ -44,6 +47,9 @@ export default Vue.extend({
   },
 
   components: {
-    'example-component': ExampleComponent
+    'example-component': ExampleComponent,
+    'pageheader': HeaderComponent,
+    'sidebar': SidebarComponent,
+    'carousel': CarouselComponent
   }
 });
