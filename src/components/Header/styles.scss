@@ -2,9 +2,23 @@
 
 .pageheader {
     width: 100%;
-    padding: 20px;
+    padding: 14px;
     background-color: rgba(255,255,255,1);
     box-shadow: 0 4px 8px -4px gray;
     position: fixed;
     top: 0;
+
+    a.navicon {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #eee;
+    }
+    #logo {
+        img {
+            vertical-align: middle;
+        }
+    }
 }//pageheader

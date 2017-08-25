@@ -1,6 +1,8 @@
 @import '~stylesheets/common/variables';
 
 .pagenav {
+    display: inline-block;
+    vertical-align: middle;
     ul {
         li {
             display: inline-block;
