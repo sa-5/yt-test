@@ -10,6 +10,12 @@
             a {
                 display: block;
                 padding: 10px 0;
+                color: #434f74;
+                font-weight: bold;
+                transition: color 0.4s ease;
+                &:hover {
+                    color: $color-highlight2;
+                }
                 &.active {
                     border-bottom: 2px solid #719dff;
                 }

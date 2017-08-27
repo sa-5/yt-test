@@ -28,5 +28,8 @@ export default Vue.extend({
 
   transitions: {},
 
-  components: {}
+  components: {},
+
+  _title: {
+  }
 });

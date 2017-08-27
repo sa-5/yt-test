@@ -1,11 +1,11 @@
 <div class="pagenav">
 
     <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Playlists</a></li>
-        <li><a href="#">Channels</a></li>
-        <li><a href="#">About</a></li>
+        <li><a class="active" v-link="{ path: '/' }">Home</a></li>
+        <li><a v-link="{ path: '/videos' }">Videos</a></li>
+        <li><a v-link="{ path: '/playlists' }">Playlists</a></li>
+        <li><a v-link="{ path: '/channels' }">Channels</a></li>
+        <li><a v-link="{ path: '/about' }">About</a></li>
     </ul>
 
 </div><!-- /pagenav -->

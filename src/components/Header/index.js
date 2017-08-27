@@ -24,7 +24,10 @@ export default Vue.extend({
 
   ready() {},
 
-  methods: {},
+  methods: {
+    openmenu() {
+    }
+  },
 
   transitions: {},
 

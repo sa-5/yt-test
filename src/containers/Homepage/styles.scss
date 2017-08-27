@@ -3,27 +3,171 @@
 
 .pagebody {
     width: 100%;
-    padding-top: 70px;
+    padding-top: 68px;
     display: flex;
 
     .maincontent {
         width: 80%;
+        @media (max-width: 900px) {
+            width: 100%;
+        }
         .pagebanner {
             width: 100%;
             min-height: 305px;
             background: url(/images/banner.jpg) no-repeat center;
             background-size: cover;
-
-
         }//pagebanner
 
-        .__container {
+        %__container {
             margin: 0 auto;
-            max-width: 980px;
-            padding: 40px;
+            max-width: 90%;
+            padding: 30px;
+
+            @media (max-width: 740px) {
+                padding: 10px;
+            }
+
+        }//content__container
+
+        .banner__container {
+            @extend %__container;
+
+            .avatar {
+
+            }
+
+            .banner__heading {
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                @media (max-width: 740px) {
+                    display: block;
+                }
+                @media (max-width: 420px) {
+                    text-align: center;
+                }
+
+                h1 {
+                    font-size: 22px;
+                    color: #fff;
+                    line-height: 1.2em;
+                    display: inline-block;
+                    vertical-align: bottom;
+                    span {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }//span
+                }//h1
+            }//banner__heading
+
+            .subscribe__button {
+                margin-left: 30px;
+                padding: 8px 20px;
+                color: #fff;
+                display: inline-block;
+                background-color: $color-highlight2;
+                border-radius: 4px;
+                @media (max-width: 420px) {
+                    margin: 5px 0;
+                }
+            }
+
+            .socialicons__list {
+                display: flex;
+                @media (max-width: 420px) {
+                    justify-content: center;
+                }
+                li {
+                    padding: 5px;
+                    a {
+                        width: 28px;
+                        height: 28px;
+                        display: block;
+                        opacity: 1;
+                        transition: opacity 0.2s ease;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+
+                        &.facebook__icon {
+                            background: url(/images/icon-facebook.png) no-repeat center;
+                        }
+                        &.twitter__icon {
+                            background: url(/images/icon-twitter.png) no-repeat center;
+                        }
+                        &.google__icon {
+                            background: url(/images/icon-google.png) no-repeat center;
+                        }
+                    }
+                }
+            }//socialicons__list
+        }//banner__container
+
+        .content__container {
+            @extend %__container;
             position: relative;
             top: -57px;
+            left: 0;
             background-color: rgba(255,255,255,1);
+
+            .pagenav {
+                margin-bottom: 30px;
+                ul {
+                    li {
+                        padding: 5px 10px;
+                    }
+                }//ul
+            }//pagenav
+
+            .feature__container {
+                margin-bottom: 60px;
+                padding: 10px 10px 40px 10px;
+                display: flex;
+                position: relative;
+                box-shadow: 0 16px 8px -12px #eee;
+                @media (max-width: 740px) {
+                    display: block;
+                }
+                .featureimg {
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }//featureimg
+                .featuredesc {
+                    padding: 0 50px;
+                    color: $color-1;
+                    @media (max-width: 740px) {
+                        padding: 20px 0;
+                    }
+
+                    h4 {
+                        margin-bottom: 15px;
+                        font-weight: bold;
+                        color: $color-highlight1;
+                    }
+                    .status {
+                        margin-bottom: 30px;
+                    }
+                    .detail {
+                        margin-bottom: 20px;
+                    }
+                    .moredetail {
+                        p {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    a {
+                        color: $color-highlight1;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }//feature__container
         }//content__container
     }//maincontent
 }//pagebody

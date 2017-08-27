@@ -3,29 +3,34 @@
     <div class="sidebar__block">
         <h3>Main</h3>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">My channels</a></li>
-            <li><a href="#">Trending</a></li>
-            <li><a href="#">Subscriptions</a></li>
+            <li><a v-link="{ path: '/' }"><span class="home__icon"></span>Home</a></li>
+            <li><a v-link="{ path: '/my-channels' }"><span class="channel__icon"></span>My channels</a></li>
+            <li><a v-link="{ path: '/trending' }"><span class="trending__icon"></span>Trending</a></li>
+            <li><a v-link="{ path: '/subscriptions' }"><span class="subscriptions__icon"></span>Subscriptions</a></li>
         </ul>
     </div><!-- /sidebar__block -->
 
     <div class="sidebar__block">
         <h3>Library</h3>
         <ul>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Watch Later</a></li>
-            <li><a href="#">Liked Videos</a></li>
+            <li><a v-link="{ path: '/history' }"><span class="history__icon"></span>History</a></li>
+            <li><a v-link="{ path: '/watch-later' }"><span class="watch__icon"></span>Watch Later</a></li>
+            <li><a v-link="{ path: '/liked-videos' }"><span class="liked__icon"></span>Liked Videos</a></li>
         </ul>
     </div><!-- /sidebar__block -->
     
     <div class="sidebar__block">
         <h3>Subscriptions</h3>
         <ul>
-            <li><a href="#">Son Tung -  MTP</a></li>
-            <li><a href="#">Feel The Sound</a></li>
-            <li><a href="#">ArianaGrandeVEVO</a></li>
+            <li><a v-link="{ path: '/son-tung-mtp' }"><img src="/images/subscription-avatar-01.png" /> Son Tung -  MTP</a></li>
+            <li><a v-link="{ path: '/feel-the-sound' }"><img src="/images/subscription-avatar-02.png" /> Feel The Sound</a></li>
+            <li><a v-link="{ path: '/ariana-grande-vevo' }"><img src="/images/subscription-avatar-03.png" /> ArianaGrandeVEVO</a></li>
         </ul>
     </div><!-- /sidebar__block -->
 
+    <div class="sidebar__block">
+        <ul>
+            <li><a v-link="{ path: '/browse' }"><span class="browse__icon"></span>Browse Channels</a></li>
+        </ul>
+    </div><!-- /sidebar__block -->
 </div><!-- /sidebar -->

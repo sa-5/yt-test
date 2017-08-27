@@ -9,10 +9,10 @@ import {
   WINDOW_RESIZE
 } from 'config/messages';
 
-import ExampleComponent from 'components/Example';
 import HeaderComponent from 'components/Header';
 import SidebarComponent from 'components/Sidebar';
 import CarouselComponent from 'components/Carousel';
+import NavComponent from 'components/Nav';
 
 export default Vue.extend({
 
@@ -47,9 +47,9 @@ export default Vue.extend({
   },
 
   components: {
-    'example-component': ExampleComponent,
     'pageheader': HeaderComponent,
     'sidebar': SidebarComponent,
-    'carousel': CarouselComponent
+    'carousel': CarouselComponent,
+    'pagenav': NavComponent
   }
 });
